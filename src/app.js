@@ -9,6 +9,12 @@ const db = require('./utils/database');
 
 initModels();
 
+db.authenticate()
+    .then(() => console.log('Connection Data Base successfully'))
+    .catch((err) => console.error(err));
+
+
+
 db.sync ().then (() => console.log("Initialized database"));
 const app = express();
 
