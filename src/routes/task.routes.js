@@ -3,13 +3,13 @@ const { getUserTasks, createNewTask, userCompleteTask, deleteTask, getAllTask} =
 
 const routes = Router();
 
-routes.get('/api/v2/task/', getAllTask);
-routes.get('/api/v2/task/:user', getUserTasks);
+routes.get('/task/', getAllTask);
+routes.get('/task/:user', getUserTasks);
 
-routes.post('/api/v2/task', createNewTask);
+routes.post('/task', createNewTask);
 
-routes.put('/api/v2/task/:id', userCompleteTask)
+routes.put('/task/:id', userCompleteTask)
 
-routes.delete('/api/v2/task/:id', deleteTask)
+routes.delete('/task/:id', deleteTask)
 
 module.exports = routes;

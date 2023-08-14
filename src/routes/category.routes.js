@@ -9,12 +9,12 @@ const {
 
 const routes = Router();
 
-routes.get('/api/v2/categories', getAllCategories);
+routes.get('/categories', getAllCategories);
 
-routes.post('/api/v2/categories', createCategory);
+routes.post('/categories', createCategory);
 
-routes.put('/api/v2/categories/:id', editCategory);
+routes.put('/categories/:id', editCategory);
 
-routes.delete('/api/v2/categories/:id', deleteCategory);
+routes.delete('/categories/:id', deleteCategory);
 
 module.exports = routes;

@@ -4,17 +4,17 @@ const { Router } = require('express');
 const routes = Router();
 
 // create new user
-routes.post('/api/v2/users', createNewUser);
+routes.post('/users', createNewUser);
 
 // Obtener todos los usuarios.
-routes.get('/api/v2/users', getAllUsers);
+routes.get('/users', getAllUsers);
 
-routes.get('/api/v2/users/:id', getOneUser)
+routes.get('/users/:id', getOneUser)
 
 // update user
-routes.put('/api/v2/users/:id', updateUser);
+routes.put('/users/:id', updateUser);
 
 // Delete user
-routes.delete('/api/v2/users/:id', deleteUser);
+routes.delete('/users/:id', deleteUser);
 
 module.exports = routes;
